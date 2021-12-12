@@ -1,19 +1,19 @@
-/* Master styles */
-body{
-    margin: 0px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.container{
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-
-/* Nav styles */
+/* Navigation styles */
 .nav-wrapper{
-    display: flex;
-    justify-content: space-between;
+    /* font-family: serif; */
+    background-color: rgba(255, 255, 255, 0.063);
     padding: 38px;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    /* z-index: 500; */
+    position: fixed;
 }
 
 .left-side{
@@ -24,10 +24,17 @@ body{
     margin-right: 20px;
     font-size: 0.9em;
     text-transform: uppercase;
+    font-family: 'Secular One', sans-serif;
+}
+
+.nav-wrapper > .right-side > div{
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    font-family: 'Secular One', sans-serif;
 }
 
 .nav-link-wrapper{
-    height: 22px;
     border-bottom: 1px solid transparent;
     transition: border-bottom 0.5s;
 }
@@ -37,7 +44,7 @@ body{
 }
 
 .nav-link-wrapper a{
-    color: #8a8a8a;
+    color: white;
     text-decoration: none;
     transition: color 0.5s;
 }
@@ -46,54 +53,30 @@ body{
     color:black;
 }
 
-/* Portfolio styles  */
-.portfolio-items-wrapper{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
 
-.portfolio-item-wrapper{
-    position: relative;
-}
-
-.portfolio-img-background{
-    height: 350px;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.img-text-wrapper{
-    position: absolute;
-    top: 0px;
+section{
+    height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    text-align: center;
-    padding-left: 100px;
-    padding-right: 100px;
+    scroll-snap-align: start;
 }
 
-.logo-wrapper img{
-    width: 50%;
-    margin-bottom: 20px;
+.one{
+    background: rgb(36, 164, 138);
 }
 
-.img-text-wrapper .subtitle{
-    transition: 1s;
-    font-weight: 600;
-    color: transparent;
+.two{
+    background: rgb(211, 79, 79);
 }
 
-.img-text-wrapper:hover .subtitle{
-    font-weight: 600;
-    color: lightseagreen;
+.three{
+    background: rgb(67, 91, 175);
 }
 
-.img-darken{
-    transition: 1s;
-    filter: brightness(10%);
+.container{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+
 }
