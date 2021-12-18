@@ -5,23 +5,23 @@
 }
 
 /* Navigation styles */
-.nav-wrapper{
+.nav-wrapper {
     /* font-family: serif; */
     background-color: rgba(255, 255, 255, 0.063);
     padding: 38px;
     justify-content: space-between;
     display: flex;
     width: 100%;
+    height: 100px;
     /* z-index: 500; */
     position: fixed;
 }
 
-.left-side{
+.right-side {
     display: flex;
 }
 
 .nav-wrapper > .left-side > div{
-    margin-right: 20px;
     font-size: 0.9em;
     text-transform: uppercase;
     font-family: 'Secular One', sans-serif;
@@ -53,7 +53,219 @@
     color:black;
 }
 
+.selected-link a{
+    color: #ffc153;
+}
 
+/* Portfolio styles */
+
+.page-wrapper{
+    padding-top: 100px;
+    height: 100vh;
+    width: 100vw;
+}
+
+    /* Navigation bar styles */
+    .games-nav-wrapper{
+        /* background-image: url("images/portfolio3.jpg"); */
+        width: 100%;
+        height: 100px;
+        justify-content: center;
+        position: relative;
+        top: 0%;
+        padding: 38px;
+        display: flex;
+        opacity: 0;
+        transition: 1ms ease-in;
+        /* bottom: -40px; */
+    }
+
+    .games-left-side{
+        display: flex;
+    }
+
+    .games-nav-wrapper > .games-left-side > div{
+        margin-right: 30px;
+        font-size: 0.9em;
+        text-transform: uppercase;
+        font-family: 'Secular One', sans-serif;
+    }
+
+    .show {
+        opacity: 1;
+    }
+
+    /* Slideshow container */
+
+    .slideshow-container {
+        width: 1800px;
+        position: relative;
+        margin: auto;
+        top: 5%
+    }
+
+        .two-column-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 80px;
+            padding-left: 200px;
+            padding-right: 200px;
+            
+            /* padding-bottom: 80px; */
+            /* width: 100%; */
+            /* height: 200px; */
+            box-sizing: border-box;
+            /* justify-content: center; */
+        }
+
+            /* Media container */
+            .main-media-container{
+                height: 400px;
+                width: 100%;
+            }
+
+            .main-media-container img{
+                /* max-width: 100%; */
+                /* height: auto; */
+                height: 100%; 
+                width: 100%; 
+                object-fit: cover;
+            }
+
+            .other-media-container{
+                height: 150px;
+                width: 100%;
+                padding-top: 20px;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                column-gap: 20px;
+            }
+
+            .other-media-container img{
+                /* max-width: 100%;
+                height: auto; */
+                height: 100%; 
+                width: 100%; 
+                object-fit: cover;
+            }
+
+            /* Text container */
+            .text-container{
+                display: flex;
+                flex-direction: column;
+            }
+
+            .short-description, .tasks{
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+
+            .text-title{
+                font-size: 1em;
+                text-transform: uppercase;
+                font-family: 'Secular One', sans-serif;
+                font-weight: 400;
+                color: #ffc153;
+            }
+
+            .game-short-description{
+                font-family: 'Mulish', sans-serif;
+                font-weight: 400;
+                font-size: 0.9em;
+                text-align: justify;
+                text-justify: inter-word;
+            }
+  
+    /* Next & previous buttons */
+    .prev, .next {
+        margin-right: 0px;
+        margin-left: 0px;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 15px;
+        /* margin-top: 0px; */
+        color: #ffc153;
+        background-color: transparent;
+        font-weight: bold;
+        font-size: 18px;
+        border-radius: 20px 20px 20px 20px;
+        transition: 0.6s ease;
+        user-select: none;
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+        right: 0;
+        border-radius: 20px 20px 20px 20px;
+    }
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+    
+    /* Caption text */
+    .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    /* Number text (1/3 etc) */
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+    
+    /* The dots/bullets/indicators */
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active, .dot:hover {
+        background-color: #717171;
+    }
+    
+    /* Fading animation */
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+    
+    @-webkit-keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+    }
+    
+    @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+        .prev, .next,.text {font-size: 11px}
+    }
+
+/* General page styles */
 section{
     height: 100vh;
     display: flex;
@@ -77,6 +289,7 @@ section{
 .container{
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
+    scroll-behavior: smooth;
     height: 100vh;
 
 }

@@ -3,56 +3,204 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- <meta name="viewport" content="width=device-width, init"> -->
+    <meta name="viewport" content="width=device-width, initial-scale = 1">
     <title>Kat Lee</title>
     <link rel="stylesheet" href="./styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Secular+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter:wght@200;400&family=Lato&family=Mulish:wght@300;400&family=Roboto+Condensed:wght@400;700&family=Secular+One&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 <body>
+
     <div class="container">
         <div class="nav-wrapper">
             
             <div class="left-side">
-                <div class="nav-link-wrapper">
-                    <a href="index.html">Home</a>
-                </div>
-
-                <div class="nav-link-wrapper">
-                    <a href="about.html">About</a>
-                </div>
-
-                <div class="nav-link-wrapper">
-                    <a href="portfolio.html">Portfolio</a>
-                </div>
-
-                <div class="nav-link-wrapper">
-                    <a href="portfolio.html">Resume</a>
-                </div>
-
-                <div class="nav-link-wrapper">
-                    <a href="portfolio.html">Contacts</a>
+                <div class="brand">
+                    <div>KAT LEE</div>
                 </div>
             </div>
             
             <div class="right-side">
-                <div class="brand">
-                    <div>KAT LEE</div>
+                <div class="nav-link-wrapper">
+                    <div class = "selected-link">
+                        <a href="#section-home">Home</a>
+                    </div>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="#section-about">About</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="#section-portfolio">Portfolio</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="#section-resume">Resume</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="#section-contact">Contact</a>
                 </div>
             </div>
 
         </div>
 
+        <div class="content-wrapper">
+            <section class="one">
+                <h1 id="section-home">Home</h1>
+                -include my name, some animation, maybe a small game
+            </section>
 
-        <section class="one">
-            <h1>First page</h1>
-        </section>
-        <section class="two">
-            <h1>Second page</h1>
-        </section>
-        <section class="three">
-            <h1>Third page</h1>
-        </section>
+            <section class="two">
+                <h1 id="section-about">About</h1>
+                -include my about
+            </section>
+
+            <section class="three">
+                <!-- <h1>Third page</h1> -->
+                <h1 id="section-portfolio"></h1>
+
+                <div class="page-wrapper">
+                    <div class="games-nav-wrapper">
+                        <div class="games-left-side">
+                            <div class="nav-link-wrapper">
+                                <a href=>Dragon Wars</a>
+                            </div>
+            
+                            <div class="nav-link-wrapper">
+                                <a href=>Dormir</a>
+                            </div>
+                            
+                            <div class="nav-link-wrapper">
+                                <a href=>Rewind</a>
+                            </div>
+                            
+                            <div class="nav-link-wrapper">
+                                <a href=>Cog in the System</a>
+                            </div>
+                            
+                            <div class="nav-link-wrapper">
+                                <a href=>Side Winder</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="slideshow-container">
+                       
+                        <div class="mySlides fade">
+                            <div class="two-column-wrapper">
+                                <div class="media-container">
+                                    <div class="main-media-container">
+                                        <img src="images/portfolio2.jpg">  
+                                    </div>
+    
+                                    <div class="other-media-container">
+                                        <img src="images/portfolio1.jpg">
+                                        <img src="images/portfolio2.jpg">
+                                        <img src="images/portfolio3.jpg">
+                                        <img src="images/portfolio4.jpg">
+                                    </div>
+        
+                                    <!-- <div class="myShots fade">
+                                        <img src="images/portfolio2.jpg" style="height: 500px;">  
+                                    </div>
+        
+                                    <div class="myShots fade">
+                                        <img src="images/portfolio3.jpg" style="height: 500px;">  
+                                    </div> -->
+                                </div>
+    
+                                <div class="text-container">
+                                    <div class="short-description">
+                                        <div class="text-title">Short description</div>
+                                        <div class="game-short-description">
+                                            On a quest to become the greatest warrior ever, the main hero tames and fuses with dragons to become stronger. A simple RPG with turn-based fighting with enemies in-game!
+                                        </div>
+                                    </div>
+
+                                    <div class="tasks">
+                                        <div class="text-title">Tasks</div>
+                                        <div class="game-short-description">
+                                            Joined a team from South America and fought through a 14-hour time difference to create a playable RPG game for the Brackey's Game Jam 2021.1 where I wrote almost 95% of the code. Built the systems for all game elements, implemented player movement, created the inventory system with scriptable objects, scripted the whole turn-based combat system, designed the save and load system between scenes using serialization and implemented the update system for the HUD and panels for all scenes.
+        
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                              <!-- <div class="numbertext">1 / 3</div>
+                                <img src="images/portfolio1.jpg" style="height: 500px;">
+                              <div class="text">Caption Text</div> -->
+                            </div>
+                        </div>
+                        
+                        <div class="mySlides fade">
+                          <div class="numbertext">2 / 3</div>
+                          <img src="images/portfolio2.jpg" style="height: 500px;">
+                          <div class="text">Caption Two</div>
+                        </div>
+                        
+                        <div class="mySlides fade">
+                          <div class="numbertext">3 / 3</div>
+                          <img src="images/portfolio3.jpg" style="height: 500px;">
+                          <div class="text">Caption Three</div>
+                        </div>
+                        
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                </div>
+                    
+                <!-- <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                </div> -->
+
+            </section>
+
+            <!-- <section class="four">
+                <h1 id="section-resume">Resume</h1>
+                -include my resume with special left pane
+            </section>
+
+            <section class="five">
+                <h1 id="section-contact">Contact</h1>
+                -include my links
+            </section> -->
+        </div>
     </div>
 </body>
+
+<!-- Javascript -->
+<script>
+    
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+    //   var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+    //   for (i = 0; i < dots.length; i++) {
+    //       dots[i].className = dots[i].className.replace(" active", "");
+    //   }
+      slides[slideIndex-1].style.display = "block";  
+    //   dots[slideIndex-1].className += " active";
+    }
+    </script>
 
 </html>
