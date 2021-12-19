@@ -7,10 +7,9 @@
     <title>Kat Lee</title>
     <link rel="stylesheet" href="./styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter:wght@200;400&family=Lato&family=Mulish:wght@300;400&family=Roboto+Condensed:wght@400;700&family=Secular+One&display=swap" rel="stylesheet">
-    <script src="script.js" defer></script>
 </head>
 <body>
-
+    <script src="script.js" defer></script>
     <div class="container">
         <div class="nav-wrapper">
             
@@ -47,21 +46,18 @@
         </div>
 
         <div class="content-wrapper">
-            <section class="one">
-                <h1 id="section-home">Home</h1>
+            <section class="one" id="section-home">
+                <h1>Home</h1>
                 -include my name, some animation, maybe a small game
             </section>
 
-            <section class="two">
-                <h1 id="section-about">About</h1>
+            <section class="two" id="section-about">
+                <h1>About</h1>
                 -include my about
             </section>
 
-            <section class="three">
-                <!-- <h1>Third page</h1> -->
-                <h1 id="section-portfolio"></h1>
-
-                <div class="page-wrapper">
+            <section class="three" id="section-portfolio">
+                <div class="page-wrapper-portfolio">
                     <div class="games-nav-wrapper">
                         <div class="games-left-side">
                             <div class="nav-link-wrapper">
@@ -96,10 +92,18 @@
                                     </div>
     
                                     <div class="other-media-container">
-                                        <img src="images/portfolio1.jpg">
-                                        <img src="images/portfolio2.jpg">
-                                        <img src="images/portfolio3.jpg">
-                                        <img src="images/portfolio4.jpg">
+                                        <div class="other-media-wrapper">
+                                            <img src="images/portfolio1.jpg">
+                                        </div>
+                                        <div class="other-media-wrapper">
+                                            <img src="images/portfolio2.jpg">
+                                        </div>
+                                        <div class="other-media-wrapper">
+                                            <img src="images/portfolio3.jpg">
+                                        </div>
+                                        <div class="other-media-wrapper">
+                                            <img src="images/portfolio4.jpg">
+                                        </div>
                                     </div>
         
                                     <!-- <div class="myShots fade">
@@ -113,15 +117,15 @@
     
                                 <div class="text-container">
                                     <div class="short-description">
-                                        <div class="text-title">Short description</div>
-                                        <div class="game-short-description">
+                                        <div class="text-title-portfolio">Short description</div>
+                                        <div class="text-body-portfolio">
                                             On a quest to become the greatest warrior ever, the main hero tames and fuses with dragons to become stronger. A simple RPG with turn-based fighting with enemies in-game!
                                         </div>
                                     </div>
 
                                     <div class="tasks">
-                                        <div class="text-title">Tasks</div>
-                                        <div class="game-short-description">
+                                        <div class="text-title-portfolio">Tasks</div>
+                                        <div class="text-body-portfolio">
                                             Joined a team from South America and fought through a 14-hour time difference to create a playable RPG game for the Brackey's Game Jam 2021.1 where I wrote almost 95% of the code. Built the systems for all game elements, implemented player movement, created the inventory system with scriptable objects, scripted the whole turn-based combat system, designed the save and load system between scenes using serialization and implemented the update system for the HUD and panels for all scenes.
         
                                         </div>
@@ -135,9 +139,60 @@
                         </div>
                         
                         <div class="mySlides fade">
-                          <div class="numbertext">2 / 3</div>
+                            <div class="two-column-wrapper">
+                                <div class="media-container">
+                                    <div class="main-media-container">
+                                        <img src="images/portfolio2.jpg">  
+                                    </div>
+    
+                                    <div class="other-media-container">
+                                        <div class="other-media-wrapper">
+                                            <img src="images/portfolio1.jpg">
+                                        </div>
+                                        <div class="other-media-wrapper">
+                                            <img src="images/portfolio2.jpg">
+                                        </div>
+                                        <div class="other-media-wrapper">
+                                            <img src="images/portfolio3.jpg">
+                                        </div>
+                                        <div class="other-media-wrapper">
+                                            <img src="images/portfolio4.jpg">
+                                        </div>
+                                    </div>
+        
+                                    <!-- <div class="myShots fade">
+                                        <img src="images/portfolio2.jpg" style="height: 500px;">  
+                                    </div>
+        
+                                    <div class="myShots fade">
+                                        <img src="images/portfolio3.jpg" style="height: 500px;">  
+                                    </div> -->
+                                </div>
+    
+                                <div class="text-container-portfolio">
+                                    <div class="short-description">
+                                        <div class="text-title-portfolio">Short description</div>
+                                        <div class="text-body-portfolio">
+                                            On a quest to become the greatest warrior ever, the main hero tames and fuses with dragons to become stronger. A simple RPG with turn-based fighting with enemies in-game!
+                                        </div>
+                                    </div>
+
+                                    <div class="tasks">
+                                        <div class="text-title-portfolio">Tasks</div>
+                                        <div class="text-body-portfolio">
+                                            Joined a team from South America and fought through a 14-hour time difference to create a playable RPG game for the Brackey's Game Jam 2021.1 where I wrote almost 95% of the code. Built the systems for all game elements, implemented player movement, created the inventory system with scriptable objects, scripted the whole turn-based combat system, designed the save and load system between scenes using serialization and implemented the update system for the HUD and panels for all scenes.
+        
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                              <!-- <div class="numbertext">1 / 3</div>
+                                <img src="images/portfolio1.jpg" style="height: 500px;">
+                              <div class="text">Caption Text</div> -->
+                            </div>
+                          <!-- <div class="numbertext">2 / 3</div>
                           <img src="images/portfolio2.jpg" style="height: 500px;">
-                          <div class="text">Caption Two</div>
+                          <div class="text">Caption Two</div> -->
                         </div>
                         
                         <div class="mySlides fade">
@@ -159,15 +214,112 @@
 
             </section>
 
-            <!-- <section class="four">
-                <h1 id="section-resume">Resume</h1>
-                -include my resume with special left pane
+            <section class="four" id="section-resume">
+                <div class="page-wrapper-resume">
+                    <div class="sidebar-wrapper">
+                        <div class="sidebar-image">
+                            <img src="">
+                        </div>
+
+                        <div class="sidebar-link">
+                            <div class="link-text">
+                                <a href="#link-about">About</a>
+                            </div>
+                            <div class="link-short">
+                                What I am, who I am, <br>why I am what I am
+                            </div>
+                        </div>
+
+                        <div class="sidebar-link">
+                            <div class="link-text">
+                                <a href="#link-skills">Skills</a>
+                            </div>
+                            <div class="link-short">
+                                Which languages and tools <br>I am familiar with
+                            </div>
+                        </div>
+
+                        <div class="sidebar-link">
+                            <div class="link-text">
+                                <a href="#link-education">Education</a>
+                            </div>
+                            <div class="link-short">
+                                Where I learned to be <br>who I turned out to be
+                            </div>
+                        </div>
+
+                        <div class="sidebar-link">
+                            <div class="link-text">
+                                <a href="#link-experience">Experience</a>
+                            </div>
+                            <div class="link-short">
+                                Where I worked
+                            </div>
+                        </div>
+
+                        <div class="sidebar-link">
+                            <div class="link-text">
+                                <a href="#link-interests">Interests</a>
+                            </div>
+                            <div class="link-short">
+                                What I love to do
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-container-resume">
+                        <div class="resume-about" id="link-about">
+                            <div class="text-title-resume">
+                                Title
+                            </div>
+                            <div class="text-body-resume">
+                                About
+                            </div>
+                        </div>
+
+                        <div class="resume-skills" id="link-skills">
+                            <div class="text-title-resume">
+                                Title
+                            </div>
+                            <div class="text-body-resume">
+                                Skills
+                            </div>
+                        </div>
+
+                        <div class="resume-education" id="link-education">
+                            <div class="text-title-resume">
+                                Title
+                            </div>
+                            <div class="text-body-resume">
+                                Education
+                            </div>
+                        </div>
+
+                        <div class="resume-experience" id="link-experience">
+                            <div class="text-title-resume">
+                                Title
+                            </div>
+                            <div class="text-body-resume">
+                                Experience
+                            </div>
+                        </div>
+
+                        <div class="resume-interests" id="link-interests">
+                            <div class="text-title-resume">
+                                Title
+                            </div>
+                            <div class="text-body-resume">
+                                Interests
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
-            <section class="five">
-                <h1 id="section-contact">Contact</h1>
+            <section class="five" id="section-contact">
+                <h1>Contact</h1>
                 -include my links
-            </section> -->
+            </section>
         </div>
     </div>
 </body>
