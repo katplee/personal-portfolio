@@ -7,6 +7,7 @@
     <title>Kat Lee</title>
     <link rel="stylesheet" href="./styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter:wght@200;400&family=Lato&family=Mulish:wght@300;400&family=Roboto+Condensed:wght@400;700&family=Secular+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f82bb11355.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <script src="script.js" defer></script>
@@ -221,9 +222,17 @@
                             <img src="">
                         </div>
 
-                        <div class="sidebar-link">
+                        <div class="sidebar-icons-wrapper">
+                            <a href="https://www.google.com/"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.google.com/"><i class="fab fa-github"></i></a>
+                            <a href="https://www.google.com/"><i class="fab fa-itch-io"></i></a>
+                            <a href="https://www.google.com/"><i class="fas fa-laptop-code"></i></a>
+                            <a href="https://www.google.com/"><i class="fas fa-file"></i></a>
+                        </div>
+
+                        <div class="sidebar-link", on-cli>
                             <div class="link-text">
-                                <a href="#link-about">About</a>
+                                <a href="#link-about" onclick="matchHeight()">About</a>
                             </div>
                             <div class="link-short">
                                 What I am, who I am, <br>why I am what I am
@@ -232,7 +241,7 @@
 
                         <div class="sidebar-link">
                             <div class="link-text">
-                                <a href="#link-skills">Skills</a>
+                                <a href="#link-skills" onclick="matchHeight()">Skills</a>
                             </div>
                             <div class="link-short">
                                 Which languages and tools <br>I am familiar with
@@ -241,7 +250,7 @@
 
                         <div class="sidebar-link">
                             <div class="link-text">
-                                <a href="#link-education">Education</a>
+                                <a href="#link-education" onclick="matchHeight()">Education</a>
                             </div>
                             <div class="link-short">
                                 Where I learned to be <br>who I turned out to be
@@ -250,7 +259,7 @@
 
                         <div class="sidebar-link">
                             <div class="link-text">
-                                <a href="#link-experience">Experience</a>
+                                <a href="#link-experience" onclick="matchHeight()">Experience</a>
                             </div>
                             <div class="link-short">
                                 Where I worked
@@ -259,7 +268,7 @@
 
                         <div class="sidebar-link">
                             <div class="link-text">
-                                <a href="#link-interests">Interests</a>
+                                <a href="#link-interests" onclick="matchHeight()">Interests</a>
                             </div>
                             <div class="link-short">
                                 What I love to do
@@ -269,11 +278,41 @@
 
                     <div class="text-container-resume">
                         <div class="resume-about" id="link-about">
-                            <div class="text-title-resume">
-                                Title
+                            <div class="about-image-wrapper">
+                                <img src="images/profile.jpg" style="height: 500px;">
                             </div>
-                            <div class="text-body-resume">
-                                About
+                            <div class="about-text-wrapper">
+                                <div class="text-name">Katrina Johanne Lee</div>
+                                <div class="text-details">
+                                    <div class="detail">
+                                        <div class="detail-icon">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                        </div>
+                                        <div class="detail-text">Kanagawa, Japan</div>
+                                    </div>
+                                    <div class="detail">
+                                        <div class="detail-icon">
+                                            <i class="fas fa-mobile-alt"></i>
+                                        </div>
+                                        <div class="detail-text">+81 70 8948 4732</div>
+                                    </div>
+                                    <div class="detail">
+                                        <div class="detail-icon">
+                                            <i class="fas fa-at"></i>
+                                        </div>
+                                        <div class="detail-text">katpelee@gmail.com</div>
+                                    </div>
+                                </div>
+                                <div class="text-title-resume">
+                                    <br>Hi! Call me Kat.
+                                </div>
+                                <div class="text-body-resume">
+                                    I have been independently developing games for just a little over a year now. What started out as a hobby quickly turned to passion and I have been going at it non-stop ever since. I am self-taught and have experienced developing games solo and with a team where online documentations and tutorials were my ultimate go-tos.
+                                    <br><br>
+                                    I am currently working as a mechanical engineer focusing on mechanical design and measurement accuracy improvement, experiences which have helped me with the technical side of programming. I am keen on utilizing my engineering background to gain a footing in the game development industry where I look forward to learning about the complete game development process as well as the structure and systems behind implementation of multiplayer games and big titles, both 2D and 3D.
+                                    <br><br>
+                                    I live for the grind of looking for a solution to a problem at hand and enjoy the fulfillment of solving it afterwards. The belief that games have the capacity to put the spotlight on important matters and questionable cultures and traditions and, consequently, bring about change (the good kind!) vital to the improvement of human life has given me the drive to do what I do.
+                                </div>
                             </div>
                         </div>
 
