@@ -6,6 +6,41 @@
     text-decoration: none;
 }
 
+.semi-bold{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.medium{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.nav-links{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.regular{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.light{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.category-space{
+    padding-top: 15px;
+}
+
 /* Navigation styles */
 .nav-wrapper {
     /* font-family: serif; */
@@ -17,46 +52,65 @@
     height: 100px;
     /* z-index: 500; */
     position: fixed;
+    align-items: center;
 }
 
 .right-side {
     display: flex;
 }
 
-.nav-wrapper > .left-side > div{
-    font-size: 0.9em;
-    text-transform: uppercase;
-    font-family: 'Secular One', sans-serif;
-}
-
 .nav-wrapper > .right-side > div{
     margin-right: 20px;
-    font-size: 0.9em;
-    text-transform: uppercase;
-    font-family: 'Secular One', sans-serif;
 }
 
-.nav-link-wrapper{
-    border-bottom: 1px solid transparent;
-    transition: border-bottom 0.5s;
-}
-
-.nav-link-wrapper:hover{
-    border-bottom: 1px solid black;
-}
-
-.nav-link-wrapper a{
-    color: white;
+.home a{
+    color: black;
     text-decoration: none;
     transition: color 0.5s;
 }
 
-.nav-link-wrapper a:hover{
-    color:black;
+.home a:hover{
+    color:#33a9ac;
 }
 
-.selected-link a{
-    color: #ffc153;
+.about a{
+    color: black;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.about a:hover{
+    color:#ffa646;
+}
+
+.portfolio a{
+    color: black;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.portfolio a:hover{
+    color:#f86041;
+}
+
+.resume a{
+    color: black;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.resume a:hover{
+    color:#982062;
+}
+
+.contact a{
+    color: black;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.contact a:hover{
+    color:#343779;
 }
 
 /* Portfolio styles */
@@ -88,9 +142,6 @@
 
     .games-nav-wrapper > .games-left-side > div{
         margin-right: 30px;
-        font-size: 0.9em;
-        text-transform: uppercase;
-        font-family: 'Secular One', sans-serif;
     }
 
     .show {
@@ -445,23 +496,23 @@ section{
 }
 
 .one{
-    background: #33a9ac;
+    background: #f0f0f0;
 }
 
 .two{
-    background: #ffa646;
+    background: #f0f0f0;
 }
 
 .three{
-    background: #f86041;
+    background: #f0f0f0;
 }
 
 .four{
-    background: #982062;
+    background: #f0f0f0;
 }
 
 .five{
-    background: #343779;
+    background: #f0f0f0;
 }
 
 .container{
