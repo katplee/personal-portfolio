@@ -18,12 +18,6 @@
     font-size: 20px;
 }
 
-.nav-links{
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 18px;
-}
 
 .regular{
     font-family: 'Raleway', sans-serif;
@@ -39,6 +33,19 @@
 
 .category-space{
     padding-top: 15px;
+}
+
+.nav-links{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.in-page-game-title{
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 60px;
 }
 
 /* Navigation styles */
@@ -113,7 +120,7 @@
     color:#343779;
 }
 
-/* Portfolio styles */
+/* New portfolio styles */
 
 .page-wrapper-portfolio{
     padding-top: 100px;
@@ -121,209 +128,114 @@
     width: 100vw;
 }
 
-    /* Navigation bar styles */
-    .games-nav-wrapper{
-        /* background-image: url("images/portfolio3.jpg"); */
-        width: 100%;
-        height: 100px;
-        justify-content: center;
-        position: relative;
-        top: 0%;
-        padding: 38px;
-        display: flex;
-        opacity: 0;
-        transition: 1ms ease-in;
-        /* bottom: -40px; */
-    }
+.game-title{
+    height: 25%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
 
-    .games-left-side{
-        display: flex;
-    }
+.game-title:hover .game-content-screenshot{
+    transform: scale(1.05);
+}
 
-    .games-nav-wrapper > .games-left-side > div{
-        margin-right: 30px;
-    }
+.game-title:hover .content-text{
+    visibility: visible;
+}
 
-    .show {
-        opacity: 1;
-    }
+.ulit-ulit .game-content-screenshot{
+    background: url("images/ulit.png");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transition: transform 400ms ease;
+}
 
-    /* Slideshow container */
+.dragon-wars .game-content-screenshot{
+    background: url("images/dragon-wars.png");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transition: transform 400ms ease;
+}
 
-    .slideshow-container {
-        padding-top: 100px;
-        width: 1800px;
-        position: relative;
-        margin: auto;
-        top: -5%
-    }
+.dormir .game-content-screenshot{
+    background: url("images/dormir.png");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transition: transform 400ms ease;
+}
 
-        .two-column-wrapper {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            column-gap: 80px;
-            padding-left: 200px;
-            padding-right: 200px;
-            
-            /* padding-bottom: 80px; */
-            /* width: 100%; */
-            /* height: 200px; */
-            box-sizing: border-box;
-            /* justify-content: center; */
-        }
+.content-text{
+    visibility: hidden;
+    transition: visibility 200ms ease-out;
+}
 
-            /* Media container */
-            .main-media-container{
-                height: 400px;
-                width: 100%;
-            }
+.game-content-bg{
+    height: 100%;
+    width: 45%;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    background: linear-gradient(0.25turn,
+    #00000000,
+    hsl(20 0% 0% / 0.3) 20%,
+    rgb(31, 31, 31));
+}
 
-            .main-media-container img{
-                /* max-width: 100%; */
-                /* height: auto; */
-                height: 100%; 
-                width: 100%; 
-                object-fit: cover;
-            }
+.game-content{
+    color: white;
+    position: absolute;
+    right: 0%;
+    padding: 25px;
+    height: 100%;
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
-            .other-media-container{
-                height: 150px;
-                width: 100%;
-                padding-top: 20px;
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr 1fr;
-                column-gap: 20px;
-            }
+.game-content-bg-left{
+    height: 100%;
+    width: 45%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background: linear-gradient(-0.25turn,
+    #00000000,
+    hsl(20 0% 0% / 0.3) 20%,
+    rgb(31, 31, 31));
+}
 
-            .other-media-container img:hover{
-                transform: translate(0, -5px);
-            }
+.game-content-left{
+    color: white;
+    position: absolute;
+    left: 0%;
+    padding: 25px;
+    height: 100%;
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
-            .other-media-container img{
-                /* max-width: 100%;
-                height: auto; */
-                height: 100%; 
-                width: 100%; 
-                object-fit: cover;
-                transition: transform .2s ease-in;
-                cursor: pointer;
-            }
+.game-tags{
+    padding-top: 0.5rem;
+}
 
-            /* Text container */
-            .text-container-portfolio{
-                display: flex;
-                flex-direction: column;
-            }
-
-            .short-description, .tasks{
-                padding-top: 10px;
-                padding-bottom: 10px;
-            }
-
-            .text-title-portfolio{
-                font-size: 1em;
-                text-transform: uppercase;
-                font-family: 'Secular One', sans-serif;
-                font-weight: 400;
-                color: #ffc153;
-            }
-
-            .text-body-portfolio{
-                font-family: 'Mulish', sans-serif;
-                font-weight: 400;
-                font-size: 0.9em;
-                text-align: justify;
-                text-justify: inter-word;
-            }
-  
-    /* Next & previous buttons */
-    .prev, .next {
-        margin-right: 0px;
-        margin-left: 0px;
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        width: auto;
-        padding: 15px;
-        /* margin-top: 0px; */
-        color: #ffc153;
-        background-color: transparent;
-        font-weight: bold;
-        font-size: 18px;
-        border-radius: 20px 20px 20px 20px;
-        transition: 0.6s ease;
-        user-select: none;
-    }
-    
-    /* Position the "next button" to the right */
-    .next {
-        right: 0;
-        border-radius: 20px 20px 20px 20px;
-    }
-    
-    /* On hover, add a black background color with a little bit see-through */
-    .prev:hover, .next:hover {
-        background-color: rgba(0,0,0,0.8);
-    }
-    
-    /* Caption text */
-    .text {
-        color: #f2f2f2;
-        font-size: 15px;
-        padding: 8px 12px;
-        position: absolute;
-        bottom: 8px;
-        width: 100%;
-        text-align: center;
-    }
-    
-    /* Number text (1/3 etc) */
-    .numbertext {
-        color: #f2f2f2;
-        font-size: 12px;
-        padding: 8px 12px;
-        position: absolute;
-        top: 0;
-    }
-    
-    /* The dots/bullets/indicators */
-    .dot {
-        cursor: pointer;
-        height: 15px;
-        width: 15px;
-        margin: 0 2px;
-        background-color: #bbb;
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 0.6s ease;
-    }
-
-    .active, .dot:hover {
-        background-color: #717171;
-    }
-    
-    /* Fading animation */
-    .fade {
-        -webkit-animation-name: fade;
-        -webkit-animation-duration: 1.5s;
-        animation-name: fade;
-        animation-duration: 1.5s;
-    }
-    
-    @-webkit-keyframes fade {
-        from {opacity: .4} 
-        to {opacity: 1}
-    }
-    
-    @keyframes fade {
-        from {opacity: .4} 
-        to {opacity: 1}
-    }
-
-    /* On smaller screens, decrease text size */
-    @media only screen and (max-width: 300px) {
-        .prev, .next,.text {font-size: 11px}
-    }
+.game-tags span{
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 3px;
+    padding: 1px;
+    line-height: 18px;
+}
 
 /* Resume styles */
 
