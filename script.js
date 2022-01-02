@@ -18,6 +18,24 @@
 
 // appearOnScroll.observe(slideshow);
 
+//Toast generation
+function showToast() {
+var email = document.querySelector('input[name="email"]');
+var name = document.querySelector('input[name="name"]');
+var subject = document.querySelector('input[name="subject"]');
+
+    var x = document.getElementById("snackbar");
+    if(
+        email.value == '' ||
+        name.value == '' ||
+        subject.value == ''
+    ){
+        return;
+    }
+    x.className = "show";
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+
 //Media selection
 const mainMedia = document.querySelector(".main-media-container");
 const otherMedia = document.querySelectorAll('.other-media-wrapper');
@@ -38,7 +56,7 @@ function matchHeight() {
     // console.log(barHeight);
 }
 
-matchHeight();
+//matchHeight();
 
 //Minigame
 var character = document.querySelector(".character");
@@ -77,8 +95,10 @@ function spawnTimer(){
 
 var checkEnd = setInterval(function(){
     var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
-    var obstacleLeft = parseInt(window.getComputedStyle(leftMostObstacle).getPropertyValue("left"));
-    console.log("set interval" + leftMostObstacle.id);
+    if(leftMostObstacle != null){
+        var obstacleLeft = parseInt(window.getComputedStyle(leftMostObstacle).getPropertyValue("left"));
+        console.log("set interval" + leftMostObstacle.id);
+    }
     if(obstacleLeft < 20 && obstacleLeft >= 0 && characterTop >= 180){
         // obstacle.style.animation = "none";
         // obstacle.style.display = "none";
