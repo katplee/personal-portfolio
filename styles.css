@@ -6,6 +6,16 @@
     text-decoration: none;
 }
 
+:root{
+    --typewriterSpeed: 6s;
+    --gameHeight: 250px;
+    --gameWidth: 1400px;
+    --characterHeight: 50px;
+    --characterwidth: 20px;
+    --obstacleHeight: 20px;
+    --obstacleWidth: 20px;
+}
+
 .semi-bold{
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
@@ -35,6 +45,12 @@
     padding-top: 15px;
 }
 
+.mono{
+    font-family: 'PT Mono', monospace;
+    font-weight: 600;
+    font-size: 18px;
+}
+
 .nav-links{
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -48,10 +64,19 @@
     line-height: 60px;
 }
 
+.hidden{
+    visibility: hidden;
+}
+
+.seen{
+    visibility: visible;
+}
+
 /* Navigation styles */
 .nav-wrapper {
     /* font-family: serif; */
-    background-color: rgba(255, 255, 255, 0.063);
+    background-color: #f0f0f0;
+    /* background-color: rgba(255, 255, 255, 0.063); */
     padding: 38px;
     justify-content: space-between;
     display: flex;
@@ -120,6 +145,140 @@
     color:#343779;
 }
 
+/* Introduction styles */
+.introduction-wrapper{
+    display: grid;
+    place-content: center;
+    row-gap: 20px;
+}
+
+.introduction-wrapper span{
+    position: relative;
+    width: max-content;
+}
+
+.introduction-wrapper span::before,
+.introduction-wrapper span::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.introduction-wrapper span::before{
+    background-color: #f0f0f0;
+    animation: typewriter var(--typewriterSpeed) steps(60) 1s forwards;
+}
+
+.introduction-wrapper span::after{
+    width: 0.125em;
+    background: #982062;
+    animation: typewriter var(--typewriterSpeed) steps(60) 1s forwards,
+    blink 750ms steps(60) infinite;
+}
+
+@keyframes typewriter{
+    to{
+        left: 100%;
+    }
+}
+
+@keyframes blink{
+    to{
+        background: transparent;
+    }
+}
+
+.animate-play{
+    animation: bounce 1s linear;
+}
+
+@keyframes bounce{
+    20%, 50%, 80%, to{transform: translateY(0);}
+    40%{transform: translateY(-20px);}
+    70%{transform: translateY(-10px);}
+    90%{transform: translateY(-2px);}
+}
+
+/* Game styles */
+
+.score{
+    position: relative;
+    height: 150px;
+    width: 1700px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+}
+
+.current, .my-high-score, .all-time-leaderboard, .pause-button{
+    width: 33%;
+    text-align: center;
+}
+
+.all-time-leaderboard i{
+    cursor: pointer;
+}
+
+.game{
+    height: var(--gameHeight);
+    width: var(--gameWidth);
+    /* border: 1px solid black; */
+    position: relative;
+    margin: auto;
+}
+
+.character{
+    width: var(--characterwidth);
+    height: var(--characterHeight);
+    background-color: black;
+    position: relative;
+    top: calc(var(--gameHeight) - var(--characterHeight));
+}
+
+.obstacle{
+    width: var(--obstacleWidth);
+    height: var(--obstacleHeight);
+    background-color: #343779;
+    /* position: relative;
+    top: calc(var(--gameHeight) - var(--characterHeight) - var(--obstacleHeight));
+    left: calc(var(--gameWidth) - var(--obstacleWidth)); */
+    visibility: hidden;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+}
+
+.obstacle-spawn{
+    animation: block-slide 4s forwards linear;
+    visibility: visible;
+}
+
+.character-animate{
+    animation: character-jump 500ms;
+}
+
+@keyframes block-slide{
+    0%{left: calc(var(--gameWidth) - var(--obstacleWidth));}
+    100%{left: 0px;}
+}
+
+@keyframes character-jump{
+    30%{top: calc(var(--gameHeight) - (2 * var(--characterHeight))); }
+    70%{top: calc(var(--gameHeight) - (2 * var(--characterHeight))); }
+    100%{top: calc(var(--gameHeight) - var(--characterHeight));}
+
+}
+
+.paused{
+    -webkit-animation-play-state:paused;
+    -moz-animation-play-state:paused;
+    -o-animation-play-state:paused; 
+    animation-play-state:paused;
+}
+
 /* New portfolio styles */
 
 .page-wrapper-portfolio{
@@ -130,17 +289,21 @@
 
 .game-title{
     height: 25%;
-    cursor: pointer;
     position: relative;
     overflow: hidden;
 }
+
 
 .game-title:hover .game-content-screenshot{
     transform: scale(1.05);
 }
 
-.game-title:hover .content-text{
-    visibility: visible;
+.game-title:hover .game-content{
+    transform: translateX(0px);
+}
+
+.game-title:hover .game-content-left{
+    transform: translateX(0px);
 }
 
 .ulit-ulit .game-content-screenshot{
@@ -154,7 +317,7 @@
 }
 
 .dragon-wars .game-content-screenshot{
-    background: url("images/dragon-wars.png");
+    background: url("images/dragon-wars.PNG");
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -173,8 +336,17 @@
     transition: transform 400ms ease;
 }
 
+.cog-in-the-system .game-content-screenshot{
+    background: url("images/cog.png");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transition: transform 400ms ease;
+}
+
 .content-text{
-    visibility: hidden;
     transition: visibility 200ms ease-out;
 }
 
@@ -191,15 +363,44 @@
 }
 
 .game-content{
+    display: flex;
+    flex-direction: row;
     color: white;
     position: absolute;
     right: 0%;
     padding: 25px;
     height: 100%;
-    width: 28%;
+    width: 32%;
+    text-align: right;
+    transform: translateX(55px);
+    transition: transform 200ms ease;
+}
+
+.game-non-links{
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+}
+
+.game-content .game-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.game-content-left .game-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.game-links > div{
+    padding: 7px 0px;
 }
 
 .game-content-bg-left{
@@ -215,19 +416,21 @@
 }
 
 .game-content-left{
+    display: flex;
+    flex-direction: row;
     color: white;
     position: absolute;
     left: 0%;
     padding: 25px;
     height: 100%;
-    width: 28%;
-    display: flex;
-    flex-direction: column;
+    width: 32%;
     justify-content: center;
+    transform: translateX(-55px);
+    transition: transform 200ms ease;
 }
 
 .game-tags{
-    padding-top: 0.5rem;
+    padding-top: 3px;
 }
 
 .game-tags span{
@@ -409,6 +612,8 @@ section{
 
 .one{
     background: #f0f0f0;
+    display: flex;
+    flex-direction: column;
 }
 
 .two{

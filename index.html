@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale = 1">
     <title>Kat Lee</title>
     <link rel="stylesheet" href="./styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Damion&family=Raleway:wght@300;400;500;600&family=Rock+3D&family=Yuji+Boku&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Damion&family=PT+Mono&family=Raleway:wght@300;400;500;600&family=Rock+3D&family=Yuji+Boku&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f82bb11355.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -46,8 +46,25 @@
 
         <div class="content-wrapper">
             <section class="one" id="section-home">
-                <h1>Home</h1>
-                -include my name, some animation, maybe a small game
+                <div class="game-wrapper">
+                    <div class="score">
+                        <div class="my-high-score medium">0</div>
+                        <div class="current semi-bold">0</div>
+                        <div class="all-time-leaderboard medium"><i class="far fa-play-circle seen"></i></div>
+                    </div>
+                    <div class="introduction-wrapper">
+                        <div class="introduction semi-bold" style="font-size: 40px;">
+                            Kat is a self-taught independent game developer and programmer. <br>She mainly codes, occasionally designs.
+                        </div>
+                        <span class="typewriter-text mono">
+                            Feeling playful? Try setting and beating your own highscore!
+                        </span>
+                    </div>
+                    <div class="game">
+                        <div class="character"></div>
+                        <div class="obstacle" id = obstacleId></div>
+                    </div>
+                </div>
             </section>
 
             <section class="two" id="section-about">
@@ -62,22 +79,32 @@
                         <div class="content-text">
                             <div class="game-content-bg"></div>
                             <div class="game-content">
-                                <div class="game-name in-page-game-title" style="font-family: 'Rock 3D', cursive;">Dragon Wars</div>
-                                <div class="game-briefer medium" style="font-size: 15px;">Become the greatest warrior ever in this simple RPG that involves dragons and fighing and weird-looking enemies! </div>
-                                <div class="game-tags">
-                                    <div class="elements-list regular" style="font-size: 11px;">
-                                        <span>&nbsp;<i class="fab fa-unity"></i>&nbsp;Unity3D&nbsp;</span>
-                                        <span>&nbsp;<i class="fas fa-code-branch"></i>&nbsp;Unity Collaborate&nbsp;</span>
-                                        <span>&nbsp;<i class="fas fa-code-branch"></i>&nbsp;GitHub&nbsp;</span>
-                                        <span>&nbsp;<i class="far fa-lightbulb"></i>&nbsp;scriptable objects for inventory system&nbsp;</span>
-                                        <br><span>&nbsp;<i class="far fa-lightbulb"></i>&nbsp;turn-based combat system+UI&nbsp;</span>
-                                        <span>&nbsp;<i class="far fa-lightbulb"></i>&nbsp;serialization for save/load data management system&nbsp;</span>
-                                        <br><span>&nbsp;<i class="far fa-lightbulb"></i>&nbsp;events/delegates&nbsp;</span>
-                                        <span>&nbsp;<i class="far fa-lightbulb"></i>&nbsp;state machines for character movement&nbsp;</span>
-                                        <span>&nbsp;<i class="far fa-lightbulb"></i>&nbsp;character animation&nbsp;</span>
-                                        <br><span>&nbsp;<i class="far fa-lightbulb"></i>&nbsp;addressables&nbsp;</span>
-                                        <span>&nbsp;<i class="fas fa-chart-area"></i>&nbsp;testing&nbsp;</span>
-                                        <span>&nbsp;<i class="fas fa-gamepad"></i>&nbsp;RPG&nbsp;</span>
+                                <div class="game-non-links">
+                                    <div class="game-name in-page-game-title" style="font-family: 'Rock 3D', cursive;">Dragon Wars</div>
+                                    <div class="game-briefer medium" style="font-size: 15px;">Become the greatest warrior ever in this simple RPG that involves dragons and fighing and weird-looking enemies! </div>
+                                    <div class="game-tags">
+                                        <div class="elements-list regular" style="font-size: 11px;">
+                                            <span>&nbsp;<i class="fab fa-unity"></i>&nbsp;Unity3D&nbsp;</span>
+                                            <span>&nbsp;<i class="fas fa-code-branch"></i>&nbsp;Unity Collaborate&nbsp;</span>
+                                            <span>&nbsp;<i class="fas fa-code-branch"></i>&nbsp;GitHub&nbsp;</span>
+                                            <span>&nbsp;<i class="far fa-lightbulb"></i>&nbsp;scriptable objects for inventory system&nbsp;</span>
+                                            <br><span>&nbsp;<i class="far fa-lightbulb"></i>&nbsp;turn-based combat system+UI&nbsp;</span>
+                                            <span>&nbsp;<i class="far fa-lightbulb"></i>&nbsp;serialization for save/load data management system&nbsp;</span>
+                                            <br><span>&nbsp;<i class="far fa-lightbulb"></i>&nbsp;events/delegates&nbsp;</span>
+                                            <span>&nbsp;<i class="far fa-lightbulb"></i>&nbsp;state machines for character movement&nbsp;</span>
+                                            <span>&nbsp;<i class="far fa-lightbulb"></i>&nbsp;character animation&nbsp;</span>
+                                            <br><span>&nbsp;<i class="far fa-lightbulb"></i>&nbsp;addressables&nbsp;</span>
+                                            <span>&nbsp;<i class="fas fa-chart-area"></i>&nbsp;testing&nbsp;</span>
+                                            <span>&nbsp;<i class="fas fa-gamepad"></i>&nbsp;RPG&nbsp;</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="game-links" style="font-size: 30px;">
+                                    <div class="github" style="border-bottom: 1px solid rgb(255, 255, 255);">
+                                        <i class="fab fa-github"></i>
+                                    </div>
+                                    <div class="itch">
+                                        <i class="fab fa-itch-io"></i>
                                     </div>
                                 </div>
                             </div>
@@ -89,21 +116,32 @@
                         <div class="content-text">
                             <div class="game-content-bg-left"></div>
                             <div class="game-content-left">
-                                <div class="game-name in-page-game-title" style="font-family: 'Yuji Boku', serif; font-size: 40px;">Dormir</div>
-                                <div class="game-briefer medium" style="font-size: 15px;">Test your wits and your reflexes and go from zero to hero as you help everyone get a few winks they so badly need!</div>
-                                <div class="game-tags">
-                                    <div class="elements-list regular" style="font-size: 11px;">
-                                        <span>&nbsp;<i class="fab fa-unity"></i>&nbsp;Unity3D&nbsp;</span>
-                                        <span>&nbsp;<i class="fas fa-code-branch"></i>&nbsp;GitHub&nbsp;</span>
-                                        <span>&nbsp;<i class="fas fa-paint-brush"></i>&nbsp;Aseprite&nbsp;</span>
-                                        <span>&nbsp;<i class="far fa-lightbulb"></i>&nbsp;a* pathfinding&nbsp;</span>
-                                        <span>&nbsp;<i class="far fa-lightbulb"></i>&nbsp;character animation&nbsp;</span>
-                                        <br><span>&nbsp;<i class="far fa-lightbulb"></i>&nbsp;events/delegates&nbsp;</span>
-                                        <span>&nbsp;<i class="far fa-lightbulb"></i>&nbsp;state machines for in-game customer management&nbsp;</span>
-                                        <br><span>&nbsp;<i class="fas fa-chart-area"></i>&nbsp;overall concept and game design&nbsp;</span>
-                                        <span>&nbsp;<i class="fas fa-gamepad"></i>&nbsp;clicker&nbsp;</span>
+                                <div class="game-links" style="font-size: 30px;">
+                                    <div class="github" style="border-bottom: 1px solid rgb(255, 255, 255);">
+                                        <i class="fab fa-github"></i>
+                                    </div>
+                                    <div class="itch">
+                                        <i class="fab fa-itch-io"></i>
                                     </div>
                                 </div>
+                                <div class="game-non-links">
+                                    <div class="game-name in-page-game-title" style="font-family: 'Yuji Boku', serif; font-size: 40px;">Dormir</div>
+                                    <div class="game-briefer medium" style="font-size: 15px;">Test your wits and your reflexes and go from zero to hero as you help everyone get a few winks they so badly need!</div>
+                                    <div class="game-tags">
+                                        <div class="elements-list regular" style="font-size: 11px;">
+                                            <span>&nbsp;<i class="fab fa-unity"></i>&nbsp;Unity3D&nbsp;</span>
+                                            <span>&nbsp;<i class="fas fa-code-branch"></i>&nbsp;GitHub&nbsp;</span>
+                                            <span>&nbsp;<i class="fas fa-paint-brush"></i>&nbsp;Aseprite&nbsp;</span>
+                                            <span>&nbsp;<i class="far fa-lightbulb"></i>&nbsp;a* pathfinding&nbsp;</span>
+                                            <span>&nbsp;<i class="far fa-lightbulb"></i>&nbsp;character animation&nbsp;</span>
+                                            <br><span>&nbsp;<i class="far fa-lightbulb"></i>&nbsp;events/delegates&nbsp;</span>
+                                            <span>&nbsp;<i class="far fa-lightbulb"></i>&nbsp;state machines for in-game customer management&nbsp;</span>
+                                            <br><span>&nbsp;<i class="fas fa-chart-area"></i>&nbsp;overall concept and game design&nbsp;</span>
+                                            <span>&nbsp;<i class="fas fa-gamepad"></i>&nbsp;clicker&nbsp;</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
                             </div>
                         </div>
                     </div>
@@ -113,18 +151,28 @@
                         <div class="content-text">
                             <div class="game-content-bg"></div>
                             <div class="game-content">
-                                <div class="game-name in-page-game-title" style="font-family: 'Damion', cursive;">Ulit-ulit</div>
-                                <div class="game-briefer medium" style="font-size: 15px;">Accomplish as many loops as possible in this cyclic universe.. without bumping into your own rewinds!</div>
-                                <div class="game-tags">
-                                    <div class="elements-list regular" style="font-size: 11px;">
-                                        <span>&nbsp;<i class="fab fa-unity"></i>&nbsp;Unity3D&nbsp;</span>
-                                        <span>&nbsp;<i class="fas fa-code-branch"></i>&nbsp;GitHub&nbsp;</span>
-                                        <span>&nbsp;<i class="fab fa-unity"></i>&nbsp;Unity fundamentals&nbsp;</span>
-                                        <span>&nbsp;<i class="fas fa-music"></i>&nbsp;BoscaCeoil&nbsp;</span>
-                                        <br><span>&nbsp;<i class="fas fa-chart-area"></i>&nbsp;peer reviewing games&nbsp;</span>
-                                        <span>&nbsp;<i class="fas fa-chart-area"></i>&nbsp;overall concept and game design&nbsp;</span>
-                                        <br><span>&nbsp;<i class="fas fa-asterisk"></i>&nbsp;received peer reviews&nbsp;</span>
-                                        <span>&nbsp;<i class="fas fa-gamepad"></i>&nbsp;puzzle&nbsp;</span>
+                                <div class="game-non-links">
+                                    <div class="game-name in-page-game-title" style="font-family: 'Damion', cursive;">Ulit-ulit</div>
+                                    <div class="game-briefer medium" style="font-size: 15px;">Accomplish as many loops as possible in this cyclic universe.. without bumping into your own rewinds!</div>
+                                    <div class="game-tags">
+                                        <div class="elements-list regular" style="font-size: 11px;">
+                                            <span>&nbsp;<i class="fab fa-unity"></i>&nbsp;Unity3D&nbsp;</span>
+                                            <span>&nbsp;<i class="fas fa-code-branch"></i>&nbsp;GitHub&nbsp;</span>
+                                            <span>&nbsp;<i class="fab fa-unity"></i>&nbsp;Unity fundamentals&nbsp;</span>
+                                            <span>&nbsp;<i class="fas fa-music"></i>&nbsp;BoscaCeoil&nbsp;</span>
+                                            <br><span>&nbsp;<i class="fas fa-chart-area"></i>&nbsp;peer reviewing games&nbsp;</span>
+                                            <span>&nbsp;<i class="fas fa-chart-area"></i>&nbsp;overall concept and game design&nbsp;</span>
+                                            <br><span>&nbsp;<i class="fas fa-asterisk"></i>&nbsp;received peer reviews&nbsp;</span>
+                                            <span>&nbsp;<i class="fas fa-gamepad"></i>&nbsp;puzzle&nbsp;</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="game-links" style="font-size: 30px;">
+                                    <div class="github" style="border-bottom: 1px solid rgb(255, 255, 255);">
+                                        <i class="fab fa-github"></i>
+                                    </div>
+                                    <div class="itch">
+                                        <i class="fab fa-itch-io"></i>
                                     </div>
                                 </div>
                             </div>
@@ -132,7 +180,33 @@
                     </div>
 
                     <div class="cog-in-the-system game-title">
-
+                        <div class="game-content-screenshot"></div>
+                        <div class="content-text">
+                            <div class="game-content-bg-left"></div>
+                            <div class="game-content-left">
+                                <div class="game-links" style="font-size: 30px;">
+                                    <div class="github" style="border-bottom: 1px solid rgb(255, 255, 255);">
+                                        <i class="fab fa-github"></i>
+                                    </div>
+                                    <div class="itch">
+                                        <i class="fab fa-itch-io"></i>
+                                    </div>
+                                </div>
+                                <div class="game-non-links">
+                                    <div class="game-name in-page-game-title" style="font-family: 'ZCOOL KuaiLe', cursive;">Cog In The System</div>
+                                    <div class="game-briefer medium" style="font-size: 15px;">Wake up. Eat. Work (from home). Eat again. Work again. Sleep. Repeat. Are you really just another cog in the system?</div>
+                                    <div class="game-tags">
+                                        <div class="elements-list regular" style="font-size: 11px;">
+                                            <span>&nbsp;<i class="fab fa-unity"></i>&nbsp;Unity3D&nbsp;</span>
+                                            <span>&nbsp;<i class="fas fa-code-branch"></i>&nbsp;GitHub&nbsp;</span>
+                                            <span>&nbsp;<i class="fas fa-paint-brush"></i>&nbsp;Aseprite&nbsp;</span>
+                                            <span>&nbsp;<i class="fas fa-chart-area"></i>&nbsp;overall concept and game design&nbsp;</span>
+                                            <span>&nbsp;<i class="fas fa-gamepad"></i>&nbsp;life-sim&nbsp;</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -147,7 +221,7 @@
 
             <section class="four" id="section-resume">
                 <div class="page-wrapper-resume">
-                    <div class="sidebar-wrapper">
+                    <!-- <div class="sidebar-wrapper">
                         <div class="sidebar-image">
                             <img src="">
                         </div>
@@ -204,7 +278,7 @@
                                 What I love to do
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                     <div class="text-container-resume">
                         <div class="resume-about" id="link-about">
