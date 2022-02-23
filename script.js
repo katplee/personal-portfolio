@@ -81,7 +81,7 @@ var bounceStart = setInterval(function(){
 //obstacle movement
 function spawnTimer(){
     var newOb = addNewObstacle(); 
-    newOb.classList.add("obstacle-moving");
+    newOb.classList.add("obstacle-moving"); //just an identifier
     newOb.classList.add("obstacle-spawn");
 
     setTimeout(function(){

@@ -2,56 +2,356 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- <meta name="viewport" content="width=device-width, init"> -->
+    <meta name="viewport" content="width=device-width, initial-scale = 1">
     <title>Kat Lee</title>
-    <link rel="stylesheet" href="./styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Secular+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./resume_styles.css" media="all">
+    <link rel="stylesheet" href="./print.css" media="print">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f82bb11355.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container">
-        <div class="nav-wrapper">
-            
-            <div class="left-side">
-                <div class="nav-link-wrapper">
-                    <a href="index.html">Home</a>
+    <div class="resume-page-1">
+        <div class="content">
+            <div class="overview">
+                <!-- contains the name, description -->
+                <div class="overview-image-wrapper">
+                    <img src="images/formal.jpg">
                 </div>
-
-                <div class="nav-link-wrapper">
-                    <a href="about.html">About</a>
-                </div>
-
-                <div class="nav-link-wrapper">
-                    <a href="portfolio.html">Portfolio</a>
-                </div>
-
-                <div class="nav-link-wrapper">
-                    <a href="portfolio.html">Resume</a>
-                </div>
-
-                <div class="nav-link-wrapper">
-                    <a href="portfolio.html">Contacts</a>
-                </div>
-            </div>
-            
-            <div class="right-side">
-                <div class="brand">
-                    <div>KAT LEE</div>
+                <div class="overview-text-wrapper">
+                    <div class="overview-text-big-wrapper">
+                        <div class="overview-name-wrapper semi-bold">
+                            Katrina Johanne Lee
+                        </div>
+                        <div class="overview-title-wrapper medium" style="font-size: 18px;">
+                            Game Developer & Programmer・Licensed Mechanical Engineer
+                        </div>
+                        <div class="overview-objective-wrapper regular">
+                            Self-taught independent game developer and programmer with experience in Unity, C# and Git. Has acquired knowledge in finite state machines, behavior trees, pathfinding and object-oriented programming through involvement in RPG, platformers, and arcade games. Has collaborated with fellow developers, artists, and testers worldwide for game jams. Occasionally does art and sound assets.
+                        </div>
+                    </div>
                 </div>
             </div>
 
+            <div class="skills-work">
+                <div class="work-projects-left">
+                    <!-- contains my work experience -->
+                    <div class="wrapper">
+                        <div class="work">
+                            <div class="title semi-bold" style="font-size: 18px;">
+                                WORK EXPERIENCE
+                            </div>
+                            <div class="work-catname medium" style="font-size: 15px; font-weight: bold;">Research and Development Engineer</div>
+                            <div class="work-compname regular" style="font-size: 14px;">Anritsu Corporation (formerly Anritsu Infivis Co., Ltd.)</div>
+                            <div class="work-details">
+                                <div class="work-year regular" style="font-style: italic;">October 2017 - present</div>
+                                <div class="work-location regular" style="font-style: italic;">Kanagawa, Japan</div>
+                            </div>
+                            <div class="work-tasks">
+                                <div class="work-tasks-title regular" style="font-style: italic;">Achievements/Tasks</div>
+                                <div class="work-tasks-details regular">
+                                    <div class="work-task">
+                                        ・Performed frame design for our high-precision weight inspection machine and did analysis both through FEA simulation and actual experimentation, which improved the weight inspection accuracy by 21%. Did 3D modelling and evaluation via iCAD SX.
+                                    </div>
+                                    <div class="work-task">
+                                        ・Identified key causes of weight inspection inaccuracies through data analysis and collaboration across departments.
+                                    </div>
+                                    <div class="work-task">
+                                        ・Built tools with VBA and LabVIEW to expedite data analysis and facilitate proper data handling. Piqued my interest in programming in general.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="projects">
+                            <div class="title semi-bold category-space" style="font-size: 18px;">
+                                PERSONAL PROJECTS
+                            </div>
+                            <div class="project-name medium" style="font-size: 15px; font-weight: bold;">Dragon Wars (Feb 2021 - July 2021; dev on hiatus) <span style="font-size: 11px;">&nbsp;team&nbsp;</span></div>
+                            
+                            <div class="project-summary regular" style="font-size: 12px;">
+                                Joined a worldwide game jam themed Stronger Together with a group from South America and produced a small-scale RPG with a Pokémon-like turn-based combat in-game. Wrote ~95% of the code. Was further developed post-competition.
+                            </div>
+                            <div class="work-tasks">
+                                <div class="work-tasks-concepts">
+                                    <div class="elements-list regular" style="font-size: 11px;">
+                                        <span>&nbsp;<i class="fab fa-unity"></i>&nbsp;Unity3D&nbsp;</span>
+                                        <span>&nbsp;<i class="fas fa-code-branch"></i>&nbsp;Unity Collaborate&nbsp;</span>
+                                        <span>&nbsp;<i class="fas fa-code-branch"></i>&nbsp;GitHub&nbsp;</span>
+                                        <span>&nbsp;<i class="far fa-lightbulb"></i>&nbsp;scriptable objects for inventory system&nbsp;</span>
+                                        <br><span>&nbsp;<i class="far fa-lightbulb"></i>&nbsp;turn-based combat system+UI&nbsp;</span>
+                                        <span>&nbsp;<i class="far fa-lightbulb"></i>&nbsp;serialization for save/load data management system&nbsp;</span>
+                                        <br><span>&nbsp;<i class="far fa-lightbulb"></i>&nbsp;events/delegates&nbsp;</span>
+                                        <span>&nbsp;<i class="far fa-lightbulb"></i>&nbsp;state machines for character movement&nbsp;</span>
+                                        <span>&nbsp;<i class="far fa-lightbulb"></i>&nbsp;character animation&nbsp;</span>
+                                        <br><span>&nbsp;<i class="far fa-lightbulb"></i>&nbsp;addressables&nbsp;</span>
+                                        <span>&nbsp;<i class="fas fa-chart-area"></i>&nbsp;testing&nbsp;</span>
+                                        <span>&nbsp;<i class="fas fa-gamepad"></i>&nbsp;RPG&nbsp;</span>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="project-name medium" style="font-size: 15px; font-weight: bold;">Dormir (August 2021 - present) <span style="font-size: 11px;">&nbsp;solo&nbsp;</span></div>
+                            <div class="project-summary regular" style="font-size: 12px;">
+                                Designed and scripted a strategy and time management clicker game set at a fictional siesta café which the player manages. Designed all pixel art, conceptualized art style. Inspired by Diner Dash, it centers around Spain's siesta culture. Refactored code once.
+                            </div>
+                            <div class="work-tasks">
+                                <div class="work-tasks-concepts">
+                                    <div class="elements-list regular" style="font-size: 11px;">
+                                        <span>&nbsp;<i class="fab fa-unity"></i>&nbsp;Unity3D&nbsp;</span>
+                                        <span>&nbsp;<i class="fas fa-code-branch"></i>&nbsp;GitHub&nbsp;</span>
+                                        <span>&nbsp;<i class="fas fa-paint-brush"></i>&nbsp;Aseprite&nbsp;</span>
+                                        <span>&nbsp;<i class="far fa-lightbulb"></i>&nbsp;a* pathfinding&nbsp;</span>
+                                        <span>&nbsp;<i class="far fa-lightbulb"></i>&nbsp;character animation&nbsp;</span>
+                                        <br><span>&nbsp;<i class="far fa-lightbulb"></i>&nbsp;events/delegates&nbsp;</span>
+                                        <span>&nbsp;<i class="far fa-lightbulb"></i>&nbsp;state machines for in-game customer management&nbsp;</span>
+                                        <br><span>&nbsp;<i class="fas fa-chart-area"></i>&nbsp;overall concept and game design&nbsp;</span>
+                                        <span>&nbsp;<i class="fas fa-gamepad"></i>&nbsp;clicker&nbsp;</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-name medium" style="font-size: 15px; font-weight: bold;">Ulit-ulit (August 1, 2020 - August 8, 2020) <span style="font-size: 11px;">&nbsp;solo&nbsp;</span></div>
+                            <div class="project-summary regular" style="font-size: 12px;">
+                                Joined my first worldwide game jam themed Rewind and completed a mini puzzle game with gameplay almost akin to snake. Conceptualized art style. Did SFX.
+                            </div>
+                            <div class="work-tasks">
+                                <div class="work-tasks-concepts">
+                                    <div class="work-tasks-concepts">
+                                        <div class="elements-list regular" style="font-size: 11px;">
+                                            <span>&nbsp;<i class="fab fa-unity"></i>&nbsp;Unity3D&nbsp;</span>
+                                            <span>&nbsp;<i class="fas fa-code-branch"></i>&nbsp;GitHub&nbsp;</span>
+                                            <span>&nbsp;<i class="fab fa-unity"></i>&nbsp;Unity fundamentals&nbsp;</span>
+                                            <span>&nbsp;<i class="fas fa-music"></i>&nbsp;BoscaCeoil&nbsp;</span>
+                                            <span>&nbsp;<i class="fas fa-chart-area"></i>&nbsp;peer reviewing games&nbsp;</span>
+                                            <br><span>&nbsp;<i class="fas fa-chart-area"></i>&nbsp;overall concept and game design&nbsp;</span>
+                                            <span>&nbsp;<i class="fas fa-asterisk"></i>&nbsp;received peer reviews&nbsp;</span>
+                                            <span>&nbsp;<i class="fas fa-gamepad"></i>&nbsp;puzzle&nbsp;</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-name medium" style="font-size: 15px; font-weight: bold;">Cog In The System (February 1, 2021 - February 8, 2021) <span style="font-size: 11px;">&nbsp;solo&nbsp;</span></div>
+                            <div class="project-summary regular" style="font-size: 12px;">
+                                Designed and scripted a life simulation game that was patterned after my life and my routine during the height of the COVID-19 pandemic (think The Sims set in the 2020s with a Nokia 3310 UI). Designed all pixel art.
+                            </div>
+                            <div class="work-tasks">
+                                <div class="work-tasks-concepts">
+                                    <div class="work-tasks-concepts">
+                                        <div class="elements-list regular" style="font-size: 11px;">
+                                            <span>&nbsp;<i class="fab fa-unity"></i>&nbsp;Unity3D&nbsp;</span>
+                                            <span>&nbsp;<i class="fas fa-code-branch"></i>&nbsp;GitHub&nbsp;</span>
+                                            <span>&nbsp;<i class="fas fa-paint-brush"></i>&nbsp;Aseprite&nbsp;</span>
+                                            <span>&nbsp;<i class="fas fa-chart-area"></i>&nbsp;overall concept and game design&nbsp;</span>
+                                            <span>&nbsp;<i class="fas fa-gamepad"></i>&nbsp;life-sim&nbsp;</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-name medium" style="font-size: 15px; font-weight: bold;">Sidewinder (July 2020) <span style="font-size: 11px;">&nbsp;solo&nbsp;</span> <span style="font-size: 11px;">&nbsp;for study purposes&nbsp;</span></div>
+                            <div class="project-summary regular" style="font-size: 12px;">
+                                Took a deep-dive and learned about the basics of OOP, MonoBehaviours in Unity, colliders and triggers, logical operators, the input system, among others.
+                            </div>
+                            <div class="work-tasks">
+                                <div class="work-tasks-concepts">
+                                    <div class="work-tasks-concepts">
+                                        <div class="elements-list regular" style="font-size: 11px;">
+                                            <span>&nbsp;<i class="fab fa-unity"></i>&nbsp;Unity3D&nbsp;</span>
+                                            <span>&nbsp;<i class="fab fa-unity"></i>&nbsp;MonoBehaviour&nbsp;</span>
+                                            <span>&nbsp;<i class="far fa-lightbulb"></i>&nbsp;OOP basics&nbsp;</span>
+                                            <span>&nbsp;<i class="fas fa-chart-area"></i>&nbsp;overall concept and game design&nbsp;</span>
+                                            <br><span>&nbsp;<i class="fas fa-asterisk"></i>&nbsp;first game ever!&nbsp;</span>
+                                            <span>&nbsp;<i class="fas fa-gamepad"></i>&nbsp;arcade&nbsp;</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-name medium" style="font-size: 15px; font-weight: bold;">Bug (November 2021) <span style="font-size: 11px;">&nbsp;team&nbsp;</span> <span style="font-size: 11px;">&nbsp;for study purposes&nbsp;</span></div>
+                            <div class="project-summary regular" style="font-size: 12px;">
+                                Learned from a seasoned programmer the basics of writing finite state machines from scratch, while growing my knowledge of GitHub.
+                            </div>
+                            <div class="work-tasks">
+                                <div class="work-tasks-concepts">
+                                    <div class="work-tasks-concepts">
+                                        <div class="elements-list regular" style="font-size: 11px;">
+                                            <span>&nbsp;<i class="fab fa-unity"></i>&nbsp;Unity3D&nbsp;</span>
+                                            <span>&nbsp;<i class="fas fa-code-branch"></i>&nbsp;GitHub&nbsp;</span>
+                                            <span>&nbsp;<i class="far fa-lightbulb"></i>&nbsp;state machines&nbsp;</span>
+                                            <span>&nbsp;<i class="fas fa-gamepad"></i>&nbsp;2D platformer&nbsp;</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-right">
+                    <div class="links">
+                        <!-- contains the links, contact details -->
+                        <div class="links-detail">
+                            <div class="detail-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="detail-text regular">Kanagawa, Japan</div>
+                        </div>
+                        <div class="links-detail">
+                            <div class="detail-icon">
+                                <i class="fas fa-at"></i>
+                            </div>
+                            <div class="detail-text regular">katpelee@gmail.com</div>
+                        </div>
+                        <div class="links-detail">
+                            <div class="detail-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div class="detail-text regular">+81 70 8948 4732</div>
+                        </div>
+                        <div class="links-detail">
+                            <div class="detail-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="detail-text regular">linkedin.com/in/katpelee</div>
+                        </div>
+                        <div class="links-detail">
+                            <div class="detail-icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <div class="detail-text regular">katlee.tech</div>
+                        </div>
+                        <div class="links-detail">
+                            <div class="detail-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="detail-text regular">github.com/katplee</div>
+                        </div>
+                    </div>
+
+                    <div class="title semi-bold category-space" style="font-size: 18px;">
+                        SKILLS
+                    </div>
+                    <div class="tech-sub-title medium" style="font-size: 14px;">
+                        Technical Competencies
+                    </div>
+                    <div class="tech-skills">
+                        <div class="tech-skill-category">
+                            <div class="tech-skill-catname regular">
+                                Programming
+                            </div>
+                            <div class="tech-skills-list regular" style="font-size: 11px;">
+                                <span>&nbsp;C# (1.5yrs)&nbsp;</span>
+                            </div>
+                            <!-- <div class="special-note"></div> -->
+                        </div>
+                        <div class="tech-skill-category">
+                            <div class="tech-skill-catname regular">
+                                Software
+                            </div>
+                            <div class="tech-skills-list regular" style="font-size: 11px;">
+                                <span>&nbsp;Visual Studio/Studio Code (1.5yrs)&nbsp;</span>
+                                <br><span>&nbsp;Microsoft Office (>10yrs)&nbsp;</span>
+                            </div>
+                        </div>
+                        <div class="tech-skill-category">
+                            <div class="tech-skill-catname regular">
+                                Game Development
+                            </div>
+                            <div class="tech-skills-list regular" style="font-size: 11px;">
+                                <span>&nbsp;Unity3D (1.5yrs)&nbsp;</span>
+                            </div>
+                        </div>
+                        <div class="tech-skill-category">
+                            <div class="tech-skill-catname regular">
+                                Version Control System
+                            </div>
+                            <div class="tech-skills-list regular" style="font-size: 11px;">
+                                <span>&nbsp;Git (1.5yrs)&nbsp;</span>
+                            </div>
+                        </div>
+                        <div class="tech-skill-category">
+                            <div class="tech-skill-catname regular">
+                                Art and Sound
+                            </div>
+                            <div class="tech-skills-list regular" style="font-size: 11px;">
+                                <span>&nbsp;<i class="fas fa-paint-brush"></i>&nbsp;Aseprite (1.5yrs)&nbsp;</span>
+                                <span>&nbsp;<i class="fas fa-paint-brush"></i>&nbsp;Krita (0.5yrs)&nbsp;</span>
+                                <br><span>&nbsp;<i class="fas fa-cube"></i>&nbsp;Blender (0.5yrs)&nbsp;</span>
+                                <span>&nbsp;<i class="fas fa-music"></i>&nbsp;BoscaCeoil (0.25yrs)&nbsp;</span>
+                            </div>
+                            <div class="special-note regular" style="font-size: 11px;">
+                                ・Did all the pixel art for Dormir using Aseprite, basing the style off <a href="https://kenney.nl/">Kenney assets <i class="fas fa-external-link-alt"></i>.</a>
+                                <br>・Did all the assets for Cog In The System with an 84x48 base resolution.
+                            </div>
+                        </div>
+                        <div class="tech-skill-category">
+                            <div class="tech-skill-catname regular">
+                                Others
+                            </div>
+                            <div class="tech-skills-list regular" style="font-size: 11px;">
+                                <span>&nbsp;<i class="fas fa-code"></i>&nbsp;HTML5&nbsp;</span>
+                                <span>&nbsp;<i class="fas fa-code"></i></i>&nbsp;CSS&nbsp;</span>
+                                <span>&nbsp;<i class="fas fa-code"></i>&nbsp;JS&nbsp;</span>
+                                <span>&nbsp;<i class="fas fa-code"></i>&nbsp;Python&nbsp;</span>
+                                <br><span>&nbsp;<i class="fas fa-code"></i>&nbsp;VBA&nbsp;</span>
+                                <span>&nbsp;<i class="fas fa-code"></i>&nbsp;LabVIEW&nbsp;</span>
+                                <span>&nbsp;<i class="fas fa-cube"></i>&nbsp;iCAD&nbsp;</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lang-sub-title medium" style="font-size: 14px;">
+                        Languages
+                    </div>
+                    <div class="lang-skills">
+                        <div class="lang-skill-category">
+                            <div class="lang-skill-catname regular">Filipino</div>
+                            <div class="lang-skill-prof regular" style="font-size: 11px;">
+                                <div class="proficiency">Native or bilingual proficiency</div>
+                            </div>
+                        </div>
+                        <div class="lang-skill-category">
+                            <div class="lang-skill-catname regular">English</div>
+                            <div class="lang-skill-prof regular" style="font-size: 11px;">
+                                <div class="proficiency">Full professional proficiency</div>
+                                <div class="proof">&nbsp;・TOEIC 985</div>
+                            </div>
+                        </div>
+                        <div class="lang-skill-category">
+                            <div class="lang-skill-catname regular">Nihongo</div>
+                            <div class="lang-skill-prof regular" style="font-size: 11px;">
+                                <div class="proficiency">Professional working proficiency</div>
+                                <div class="proof">&nbsp;・JLPT N2 (日本語能力試験N2合格)</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="misc-educ-skills">
+                        <!-- contains my education and skills -->
+                        <div class="title semi-bold category-space" style="font-size: 18px;">
+                            EDUCATION
+                        </div>
+                        <div class="educ-major medium" style="font-size: 14px;">BSc in Mechanical Engineering</div>
+                        <div class="educ-school regular">University of the Philippnes Diliman</div>
+                        <div class="educ-details">
+                            <div class="educ-year regular" style="font-size: 11px; font-style: italic;">June 2011 - June 2016 | Metro Manila, Philippines</div>
+                        </div>
+                        <div class="educ-courses regular" style="font-size: 11px">Courses: Numerical Methods, Machine Design, Control Systems, Engineering Math & Physics</div>
+                    </div>
+
+                    <div class="misc-hobbies">
+                        <!-- contains my interests -->
+                        <div class="title semi-bold category-space" style="font-size: 18px;">
+                            INTERESTS
+                        </div>
+                        <div class="interest-list regular" style="font-size: 11px;">
+                            Hiking (日本百名山を目指している！Aiming for Japan's 100 famous mountains!) | Running | Cooking | Baking | Eating (ピザ大好き！Pizza's my favorite!)
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-
-        <section class="one">
-            <h1>First page</h1>
-        </section>
-        <section class="two">
-            <h1>Second page</h1>
-        </section>
-        <section class="three">
-            <h1>Third page</h1>
-        </section>
     </div>
 </body>
 
